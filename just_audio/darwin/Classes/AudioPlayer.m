@@ -880,7 +880,7 @@
             } */
             return;
         } else {
-            int expectedIndex = [self indexForItem:playerItem];
+         /*   int expectedIndex = [self indexForItem:playerItem];
             if (_index != expectedIndex) {
                 // AVQueuePlayer will sometimes skip over error items without
                 // notifying this observer.
@@ -888,7 +888,8 @@
                 _index = expectedIndex;
                 [self updateEndAction];
                 [self broadcastPlaybackEvent];
-            }
+            } */
+            return;
         }
         //NSLog(@"currentItem changed. _index=%d", _index);
         _bufferUnconfirmed = YES;
