@@ -869,7 +869,7 @@
         IndexedPlayerItem *playerItem = (IndexedPlayerItem *)change[NSKeyValueChangeNewKey];
         //IndexedPlayerItem *oldPlayerItem = (IndexedPlayerItem *)change[NSKeyValueChangeOldKey];
         if (playerItem.status == AVPlayerItemStatusFailed) {
-          /*  if ([_orderInv[_index] intValue] + 1 < [_order count]) {
+            if ([_orderInv[_index] intValue] + 1 < [_order count]) {
                 // account for automatic move to next item
                 _index = [_order[[_orderInv[_index] intValue] + 1] intValue];
                 //NSLog(@"advance to next on error: index = %d", _index);
@@ -877,7 +877,7 @@
                 [self broadcastPlaybackEvent];
             } else {
                 //NSLog(@"error on last item");
-            } */
+            } 
             return;
         } else {
          /*   int expectedIndex = [self indexForItem:playerItem];
